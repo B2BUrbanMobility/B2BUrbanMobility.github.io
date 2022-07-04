@@ -31,7 +31,7 @@ div {
 
     .navbar .logo {
         font-family: 'Goldman', cursive;
-        margin-bottom:7px;
+        margin-bottom: 7px;
         font-size: 37px;
         font-weight: 300;
         color: black;
@@ -57,7 +57,7 @@ div {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom:13%;
+    padding-bottom: 13%;
 }
 /*---------header ends--------------*/
 .a, .l {
@@ -65,11 +65,18 @@ div {
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-.aa, .ll{
+
+.aa, .ll {
     padding: 3rem 0px;
     flex: 1 1 25rem;
 }
-
+.about {
+    background-image: url('../images/about.jpg');
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 13%;
+}
 
 
 
@@ -78,7 +85,7 @@ div {
     padding: 20px 60px;
     text-align: center;
     color: #444;
-    font-size:29px;
+    font-size: 29px;
 }
 
 .faq-container {
