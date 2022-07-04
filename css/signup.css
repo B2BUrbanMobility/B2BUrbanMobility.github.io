@@ -1,0 +1,190 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    border: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+div {
+    display: block;
+}
+
+
+/*---------header starts--------------*/
+.navbar {
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 3px 8%;
+    padding-bottom: 0px;
+    z-index: 1;
+    overflow: hidden;
+    background: #fff;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+    .navbar .logo {
+        font-family: 'Goldman', cursive;
+        margin-bottom: 7px;
+        font-size: 37px;
+        font-weight: 300;
+        color: black;
+        text-decoration: none;
+    }
+
+.logo span {
+    color: black;
+    font-size: 30px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*---------header ends--------------*/
+
+.sign{
+    background-color:black;
+    font-family:sans-serif;
+}
+
+    .sign p {
+        font-weight: lighter;
+        line-height: 20px;
+        font-size: 14px;
+        font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+#selected, #selected2{
+    text-transform: uppercase;
+    color: teal;
+    padding: 0 5px;
+    border:{
+    width: 1px;
+    style: solid;
+    color: grey;
+    }
+    font: {
+    family: Consolas;
+    size: 0.8em;
+    }
+}
+
+
+/*************footer**************/
+
+
+.box-container {
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer {
+    font-family: UberMoveText, system-ui, " Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+    .footer .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        /*grid-gap (row - column)*/
+    }
+
+        .footer .box-container .box {
+            padding: 3rem 0px;
+            flex: 1 1 25rem;
+        }
+
+
+
+            .footer .box-container .box h3 {
+                color: black;
+                font-weight: 700;
+                padding: 12px;
+                font-size: 1.4rem;
+            }
+
+            .footer .box-container .box a {
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                display: block;
+                padding: 10px;
+            }
+
+                .footer .box-container .box a:hover {
+                    color: #eee;
+                }
+
+    .footer .end p {
+        color: rgb(213, 205, 205);
+        font-size: smaller;
+        background-color: #222;
+        padding: 17px 0px;
+    }
+
+    .footer a {
+        flex-direction: row;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        padding: 10px;
+    }
+
+        .footer a:hover {
+            color: #eee;
+        }
+
+    .footer .box-container .box .logo {
+        margin-left: 0%;
+        padding-left: 0rem;
+        margin-right: 0%;
+        color: white;
+        text-decoration: none;
+        font-family: 'Goldman', cursive;
+        font-size: 37px;
+        font-weight: 300;
+    }
+
+.logo span {
+    color: white;
+    font-size: 30px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+.feedback {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 160px;
+    text-align: center;
+    padding: 13px 8px;
+    background: #161619;
+    border-radius: 5px;
+}
+
+    .feedback a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
