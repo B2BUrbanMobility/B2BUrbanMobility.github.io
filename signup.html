@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | B2B</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Jomhuria&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Nunito:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chakra+Petch:wght@300&family=Fredoka+One&family=Goldman&family=Orbitron&family=Prompt:wght@100&family=Righteous&family=Stick+No+Bills:wght@300&family=Teko&family=Titillium+Web:wght@200&family=Unica+One&display=swap" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script type="text/javascript" src="/js/lib/dummy.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+    <script type="text/javascript" src="https://rawgit.com/thielicious/selectFile.js/master/selectFile.js"></script>
+    <script id="insert"></script>
+
+
+    <script src="/js/stringify.js?b4d0c7f2bd15980ceac8840bef74a0ea5c51ed6d" charset="utf-8"></script>
+    <script>
+        const customConsole = (w) => {
+            const pushToConsole = (payload, type) => {
+                w.parent.postMessage({
+                    console: {
+                        payload: stringify(payload),
+                        type: type
+                    }
+                }, "*")
+            }
+
+            w.onerror = (message, url, line, column) => {
+                // the line needs to correspond with the editor panel
+                // unfortunately this number needs to be altered every time this view is changed
+                line = line - 70
+                if (line < 0) {
+                    pushToConsole(message, "error")
+                } else {
+                    pushToConsole(`[${line}:${column}] ${message}`, "error")
+                }
+            }
+
+            let console = (function (systemConsole) {
+                return {
+                    log: function () {
+                        let args = Array.from(arguments)
+                        pushToConsole(args, "log")
+                        systemConsole.log.apply(this, args)
+                    },
+                    info: function () {
+                        let args = Array.from(arguments)
+                        pushToConsole(args, "info")
+                        systemConsole.info.apply(this, args)
+                    },
+                    warn: function () {
+                        let args = Array.from(arguments)
+                        pushToConsole(args, "warn")
+                        systemConsole.warn.apply(this, args)
+                    },
+                    error: function () {
+                        let args = Array.from(arguments)
+                        pushToConsole(args, "error")
+                        systemConsole.error.apply(this, args)
+                    },
+                    system: function (arg) {
+                        pushToConsole(arg, "system")
+                    },
+                    clear: function () {
+                        systemConsole.clear.apply(this, {})
+                    },
+                    time: function () {
+                        let args = Array.from(arguments)
+                        systemConsole.time.apply(this, args)
+                    },
+                    assert: function (assertion, label) {
+                        if (!assertion) {
+                            pushToConsole(label, "log")
+                        }
+
+                        let args = Array.from(arguments)
+                        systemConsole.assert.apply(this, args)
+                    }
+                }
+            }(window.console))
+
+            window.console = { ...window.console, ...console }
+
+            console.system("Running fiddle")
+        }
+
+        if (window.parent) {
+            customConsole(window)
+        }
+    </script>
+
+
+</head>
+<body class="theme">
+    <div class="navbar" style="margin-top:9px; margin-bottom:9px;">
+        <a><img style=" width: 42px;" src="images/logo.png" /> </a>
+        <a href="index.html" class="logo"> B2B <span style="color:black; font-size:26px; font-weight:700;">X</span> Credible<span style="font-size: 16px; font-weight: 500; color: black;"><sub>EV</sub></span></a>
+        <a href="#ll" style=" margin-top: 11px; margin-left:65%;font-size:20px" target="_self"> <i class="fa fa-language" style="font-size:20px;color:black;"></i> EN</a>
+        <a href="login.html" style=" margin-top: 11px; margin-left:1%;  font-size:20px;" target="_self"> <i class="fa fa-user" style="font-size:20px;color:black;"></i> Log in</a>
+        <a href="signup.html" style="margin-top: 6px; margin-left: 1%; padding: 9px 9px; color: white; background-color: black; font-size: 16px; border-radius: 15px; " target="_self">Sign Up</a>
+    </div>
+    <!--------------Home--------------->
+
+
+
+
+
+    <div class="sign">
+        <div class="ico" style="flex-direction: row; display:flex;">
+            <h1 style="font-family: UberMove, UberMoveText, system-ui, sans-serif; margin-left: 10%; padding-top: 10%; font-weight: 500; line-height: 64px; font-size: 55px; color: #fff; ">
+                Everyday life gets<br />easier with Credible<span style="font-size:17px;"><sub>EV</sub></span><br /> <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top:2%; line-height: 33px; font-size: 22px; font-weight: 400; color: #fff;">
+                The future belongs to the autonomous,<br />electric and connected car.
+</p>
+            </h1>
+
+
+            <form style="margin-left: 25%; margin-right: 10%; margin-top:5%; background-color: #fff; width: 590px; ">
+                <div class="s" style="margin-left:8%; ">
+                    <br /><br />
+                    <h3 style="line-height: 32px; margin-bottom:7%; font-size: 27px; color: #000000; font-weight: 500; font-family: sans-serif;">
+                        Sign up now
+                    </h3>
+                    <input id="fn" style=" background-color: #EEEEEE; width: 13rem; padding: 2%; margin-bottom: 4%; margin-right: 20px;" name="fn" placeholder="First name" value="" />
+                    <input id="ln" style="background-color: #EEEEEE; padding: 2%; width: 13rem; margin-bottom: 4%; " name="ln" placeholder="Last name" value="" />
+                    <input id="email" style="background-color: #EEEEEE; padding: 2%; margin-bottom: 4%; width:29rem;" name="email" placeholder="Email" value="" />
+                    <br /><input id="password" style="background-color: #EEEEEE; padding: 2%; margin-bottom: 4%; width: 29rem;" name="password" type="password" placeholder="Password" value="" />
+                    <br /><input id="phone" style="background-color: #EEEEEE; padding: 2%; margin-bottom: 4%; width: 29rem;" name="phone" placeholder="Phone number" value="" />
+                    <br /> <input id="visa" style="background-color: #EEEEEE; padding: 2%; margin-bottom: 4%; width: 29rem;" name="visa" placeholder="Visa" value="" />
+                    <br /><div class="ico" style="background-color: #EEEEEE; padding: 2%; margin-bottom: 4%; width: 29rem;">
+                        <span style="color: #808080;">ID</span>
+                        <input type="file" hidden="" id="choose">
+                        <input type="button" value=" " style="background-image: url(images/photo.png);background-size: contain; width:5%; cursor:pointer;" onclick="getFile.simulate()" />
+                        <label id="selected" style="color:black; font-size:20px;">Nothing selected</label>
+                    </div>
+                    <div class="ico" style="background-color: #EEEEEE; padding: 2%; margin-bottom: 4%; width: 29rem;">
+                        <span style="color: #808080;">Driver's license</span>
+                        <input type="file" hidden="" id="choose">
+                        <input type="button" value=" " style="background-image: url(images/photo.png);background-size: contain; width:5.2%; cursor:pointer;" onclick="getFile2.simulate()" />
+                        <label id="selected2" style="color:black; font-size:20px;">Nothing selected</label>
+                    </div>
+                    <p>
+                        By proceeding, I agree to Credible's <a href="#">Terms of Use</a> and acknowledge that I have <br />read the <a href="#">Privacy Policy</a>.
+                        <br> <br>I also agree that Uber or its representatives may contact me by email, phone, or<br />SMS (including by automated means) at the email address or number I provide, <br />including for marketing purposes.
+                    </p><br />
+                    <p><button type="submit" style="background-color:black; color:#fff; padding: 14px 25px 14px 25px; font-size:16px;">Next</button>&nbsp;&nbsp;&nbsp;Already have an account?<a href="login.html">Sign in</a></p>
+                    <br /><br />
+                </div>
+            </form>
+        </div>
+       
+    </div>
+
+
+
+
+
+
+    <!-----------------end Home--------------->
+    <div class="feedback">
+        <a href="Feed Back.html" target="_blank">feedback</a>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="logo"><img style=" width: 42px;" src="images/logofff.png" />B2B <span style="color:white; font-size:26px; font-weight:700;">X</span> Credible<span style="font-size: 16px; font-weight: 500; color: white;"><sub>EV</sub></span></a>
+
+                <a href="#company" target="_self" style="margin-right:80px; margin-top:33px;">Locations</a>
+                <a href="#help" target="_self" style="margin-right:80px;">Company</a>
+                <a href="#loc" target="_self" style="margin-right: 80px;">Credible<span style="font-size: 10px; color: rgb(213, 205, 205);"><sub> EV</sub></span></a>
+                <a href="#" target="_self" style="margin-right:110px;">Safety</a>
+                <a href="#log" target="_self" style="margin-right:100px;">Sign up</a>
+            </div>
+            <div class="box">
+                <h3></h3><h3></h3><h3><h3></h3></h3>
+                <a style="padding-top:30px;">Office : <p style="font-size: 13px; color: rgb(213, 205, 205);">4974+CXW, Al Matar, Qesm an Nuzhah, Cairo Governorate<br /></p></a>
+                <a>Bussines Hours : <p style="font-size: 13px; color: rgb(213, 205, 205);">From Saturday to Thursday, 8am to 9pm<br /></p></a>
+                <a>Call : <p style="font-size: 13px; color: rgb(213, 205, 205);">02-26631203</p></a>
+                <div class="ico" style="flex-direction: row; display:flex; margin-left:260px; padding-top:10px;">
+                    <a style="font-size:14px;"><i class='fas fa-globe' style="color:white"></i> English</a>
+                    <a style="font-size:14px;"><i class="fas fa-map-marker-alt" style="color:white"></i> Cairo</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class=" app">
+                    <h3><h3><h3></h3></h3></h3><h3></h3><br />
+                    <a href="#pl" style="margin-left:20px; padding-top:10px;"><img style="margin-right: 2em; width: 190px;" src="images/google_play (1).png" title="Download the app on google play"></a>
+                    <a href="#app" style="margin-left:20px; padding-top:30px;"><img style="margin-right: 2em; width: 210px;" src="images/app_store (1).png" title="Download the app on app store"></a>
+                </div>
+                <div class="ico" style="flex-direction: row; display:flex; ">
+                    <a href="#" style="margin-left:260px;"><i class="fab fa-linkedin"></i> </a>
+                    <a href="#" style="margin-left:20px;"><i class="fab fa-twitter"></i> </a>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <p style=" text-align:center; font-family: UberMoveText, system-ui, " Helvetica Neue" , Helvetica, Arial, sans-serif; color: white;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy;2022 B2B Urban Mobility. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+
+
+ 
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+
+        var getFile2 = new selectFile;
+        getFile2.targets('choose', 'selected2');
+
+
+        //]]></script>
+       <script type="text/javascript">
+        //<![CDATA[
+
+
+        var getFile = new selectFile;
+        getFile.targets('choose', 'selected');
+
+
+        //]]></script>
+
+
+    <script>
+        // tell the embed parent frame the height of the content
+        if (window.parent && window.parent.parent) {
+            window.parent.parent.postMessage(["resultsFrame", {
+                height: document.body.getBoundingClientRect().height,
+                slug: "4oxmsy49"
+            }], "*")
+        }
+
+        // always overwrite window.name, in case users try to set it manually
+        window.name = "result"
+    </script>
+
+    <script>
+        let allLines = []
+
+        window.addEventListener("message", (message) => {
+            if (message.data.console) {
+                let insert = document.querySelector("#insert")
+                allLines.push(message.data.console.payload)
+                insert.innerHTML = allLines.join(";\r")
+
+                let result = eval.call(null, message.data.console.payload)
+                if (result !== undefined) {
+                    console.log(result)
+                }
+            }
+        })
+    </script>
+
+
+
+
+
+</body>
+</html>
