@@ -60,6 +60,14 @@ div {
     padding-bottom: 13%;
 }
 /*---------header ends--------------*/
+.ph {
+    background-image: url('../images/ab.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top:8%;
+    padding-bottom: 8%;
+}
 .a, .l {
     display: flex;
     flex-wrap: wrap;
@@ -120,12 +128,12 @@ div {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
-    background-color: #F9F9F9;
+    background-color: #e4e6e8;
 }
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
     padding: 0 18px;
-    background-color: white;
+    background-color: #F2F5F8;
     display: none;
     overflow: hidden;
 }
